@@ -1,0 +1,17 @@
+{
+  "name": "wow",
+  "version": "1.0.0",
+  "description": "wonders of the world-cooking or more like looking backend rest API stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev":"nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0",
+    "nodemon": "^3.1.4"
+  }
+}
