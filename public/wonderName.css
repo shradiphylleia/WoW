@@ -1,0 +1,30 @@
+*{
+    font-family:'Times New Roman', Times, serif;
+}
+
+html{
+    background-color:rgb(255, 255, 255);
+    padding:none;
+}
+
+.name{
+    margin-left:30vw;
+    margin-top:10vh;
+}
+
+
+.container{
+    margin-top:5vh;
+    margin-left:23vw;
+    display:flex;
+    gap:50px;
+}
+
+.imgref{
+    width:580px;
+    height:540px;
+}
+
+.info{
+    font-size:20px;
+}

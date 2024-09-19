@@ -34,9 +34,6 @@ app.get('/wonders',(req,res)=>{
   res.render('wonders', {wonderData});
 })
 
-// app.get('/wonders', (req,res)=>{
-//   res.json(wonderData);
-// })
 
 app.get('/wonders/:name', (req, res) => {
   const wonderName = req.params.name;  
@@ -44,7 +41,7 @@ app.get('/wonders/:name', (req, res) => {
   //through each that is for w in wonderData(python semantic reference)
 
   if (wonder) {
-      res.json(wonder);
+      res.render('wonderName',{wonder:wonder});
   } else {
       res.status(404).send('Wonder of the world not found');
   }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>history</title>
+    <link rel="stylesheet" href="/wonderName.css">
+</head>
+
+<body>
+    <div class="name">
+        <h1>
+            <%= wonder.Name %>
+        </h1>
+    </div>
+
+    <div class="container">
+        <div class="img">
+            <img class="imgref" src="<%= wonder.pic%>" alt="<%= wonder.Name %>">
+        </div>
+
+        <div class="info">
+            <p class="type"><strong>Type:</strong>
+                <%= wonder.Type %>
+            </p>
+            <p class="loc"><strong>Location:</strong>
+                <%= wonder.Location %>
+            </p>
+            <p class="year"><strong>Built in:</strong>
+                <%= wonder.Year %>
+            </p>
+            <a class="info" href="<%= wonder.wikilink%>" target="_blank">Learn More</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
