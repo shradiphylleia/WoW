@@ -1,0 +1,58 @@
+*{
+    font-family:'Times New Roman', Times, serif;
+}
+
+html{
+    background-color:rgb(255, 255, 255);
+    padding:none;
+}
+
+.container{
+    background-color:black;
+    color:white;
+    height:100px;
+    padding:15px;
+    padding-left:40px;
+}
+
+.container p{
+    font-size:40px;
+}
+
+.welcome h1{
+    margin-left:30vw;
+}
+
+.welcome img{
+    width:100vw;
+    height:70vw;
+}
+
+.contianerDesc{
+    display:flex;
+}
+
+.description{
+    margin-top:20vh;
+    background-color:rgb(3, 12, 36);
+    height:200px;
+    width:450px;
+    padding:50px;
+    margin-left:40px;
+    display:inline-block;
+}
+
+.description p{
+    font-size:17px;
+    color:white;
+}
+
+.exploreBttn{
+    display:inline-block;
+    margin-left:30vw;
+}
+
+.exploreBttn button{
+    height:38px;
+    width:100px;
+}

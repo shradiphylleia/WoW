@@ -1,0 +1,45 @@
+html{
+    background-color:rgb(255, 255, 255);
+    padding:none;
+}
+
+.container{
+    background-color:black;
+    color:white;
+    height:100px;
+    padding:15px;
+    padding-left:40px;
+}
+
+.container p{
+    font-size:40px;
+}
+
+.header{
+    font-size:42px;
+    margin-left:35vw;
+}
+
+.wonders-container {
+    display: flex;
+    flex-wrap: wrap;
+   margin-left:10vw;
+   margin-top:20vh;
+}
+
+.wonder-card {
+    padding:6px;
+    box-shadow: rgba(9, 8, 8, 0.24) 2px 3px 3px 2px;
+    width: 300px;
+    height: 360px;
+    overflow: hidden;
+    margin-bottom: 12vh;
+    margin-right:5vw;
+}
+
+
+.wonder-card .imgref{
+    width:200px;
+    height:150px;
+}
+

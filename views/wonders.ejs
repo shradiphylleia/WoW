@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>history</title>
+    <link rel="stylesheet" href="/wonders.css">
+</head>
+<body>
+    <div class="container">
+        <p>Architectural wonders of the world</p>
+    </div>
+
+    <h1 class="header">Wonders of the World</h1>
+    
+    <div class="wonders-container">
+        <% wonderData.forEach(function(wonder) { %>
+            <div class="wonder-card">
+                <h2 class="name"><%= wonder.Name %></h2>
+                <img class="imgref" src="<%= wonder.pic%>" alt="<%= wonder.Name %>">
+                <p class="type"><strong>Type:</strong> <%= wonder.Type %></p>
+                <p class="loc"><strong>Location:</strong> <%= wonder.Location %></p>
+                <p class="year"><strong>Built in:</strong> <%= wonder.Year %></p>
+                <a class="info" href="<%= wonder.wikilink%>" target="_blank">Learn More</a>
+            </div>
+        <% }); %>
+    </div>
+
+</body>
+</html>
