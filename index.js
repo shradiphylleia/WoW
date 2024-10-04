@@ -48,6 +48,20 @@ app.get('/wonders/:name', (req, res) => {
 });
 
 
+//here learn
+app.get('/search', (req, res) => {
+  const searchQuery = req.query.query.toLowerCase(); 
+  const wonder = wonderData.filter(w => w.Name.toLowerCase().includes(searchQuery)); 
+
+  if (wonder.length > 0) {
+      res.render("wonderName",{ wonder:wonder});
+  } else {
+      res.status(404).send('No wonders found');
+  }
+});
+
+
+
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
   });
